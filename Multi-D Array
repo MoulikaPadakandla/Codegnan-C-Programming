@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main(){
+    int a[2][2]={10,20,30,40},i,j;
+    printf("Array values are: ");
+    for(i=0;i<2;i++){
+        printf("\n");
+        for(j=0;j<2;j++){
+            printf("%d ", a[i][j]);
+        }
+    }
+}
