@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main(){
+    int n,i,a[50];
+    printf("enter size btw 0 to 50:");
+    scanf("%d",&n);
+    printf("enter %d values to store ",n);
+    for(i=0;i<n;i++){
+        scanf("%d", &a[i]);
+    }
+    printf("entered values are ");
+    for(i=0;i<n;i++){
+        printf("%d ", a[i]);
+    }
+}
