@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main(){
+    int a[]={10,28,11,32,54},i;
+    int size = sizeof(a)/sizeof(a[0]);
+    printf("array in reverse order: ");
+    for(i=size-1;i>=0;i--){
+        printf("%d ",a[i]);
+    }
+}
