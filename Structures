@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+struct student{
+    char name[20];
+    int rno;
+};
+void main(){
+    struct student s1,s2;
+    s1.rno =46;
+    strcpy(s1.name,"moulika");
+    s2.rno=44;
+    strcpy(s2.name,"hasini");
+    printf("student 1 roll no: %d and name is %s \n",s1.rno,s1.name);
+    printf("student 2 roll no: %d and name is %s \n",s2.rno,s2.name);
+}
