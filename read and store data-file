@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main(){
+    FILE *f = fopen("student.txt","w");
+    char name[20];
+    int rollno;
+    printf("enter your name: ");
+    scanf("%[^\n]",name);
+    fprintf(f,"Name: %s\n",name);
+    printf("Enter rollno: ");
+    scanf("%d",&rollno);
+    fprintf(f,"rollno: %d",rollno);
+    printf("Data inserted successfully");
+    fclose(f);
+}
