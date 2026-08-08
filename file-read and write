@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main(){
+    FILE *fp=fopen("data.txt","r");
+    char ch;
+    if(fp==NULL){
+        printf("File not found\n");
+    }
+    fprintf(fp,"Hello\n");
+    fprintf(fp,"I am Moulika");
+    printf("data added successfully\n");
+    printf("File content is: \n");
+    while((ch=fgetc(fp))!=EOF){
+        printf("%c",ch);
+    }
+    fclose(fp);
+}
